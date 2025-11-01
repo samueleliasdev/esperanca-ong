@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #030a8c;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+}
+
+nav {
+  background-color: gray;
+  color: #2b448c;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid #444;
+}
+
+nav a:hover {
+  background-color: #03258cbd;
+}
+
+.menu-toggle:checked + .menu-btn + nav {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  nav a {
+    color: rgb(112, 112, 112);
+    border: none;
+  }
+
+  nav a:hover {
+    background-color: #03258c67;
+    color: white;
+  }
+}
+
+header {
+  height: 60vh;
+  background-color: #2b448c;
+  color: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+
+  .introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .audio-controles {
+    margin-top: 20px;
+  }
+
+  .audio-controles button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #f2efc2;
+    color: #03258c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .audio-controles button:hover {
+    background-color: #030a8c;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+section {
+    background-color: #F2EFC2;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+.projeto1 {
+    text-align: center;
+
+    h2 {
+        color: #030a8c;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+        color: #2b448c;
+    }
+}
+
+div.img-separador {
+    margin: auto;
+    max-width: 70%;
+    max-height: 70%;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+    }
+}
+
+.projeto2 {
+
+    text-align: center;
+
+    h2 {
+        color: #030a8c;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+        color: #2b448c;
+    }
+}
+
+.projeto3 {
+
+    text-align: center;
+
+    h2 {
+        color: #030a8c;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+        color: #2b448c;
+    }
+}
+
+.projeto4 {
+
+    text-align: center;
+
+    h2 {
+        color: #030a8c;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+        color: #2b448c;
+    }
+}
+
+.site-footer {
+  background-color: #2B448C;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ .sidebar {
+      position: fixed;
+      top: 55px;
+      right: 0;
+      width: 220px;
+      height: 40vh;
+      background-color: #2B448C;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    /* Conteúdo principal */
+    .content {
+      margin-left: 240px; 
+      padding: 40px;
+      flex: 1;
+    }
+
+    .content p {
+      margin-bottom: 30px;
+    }
